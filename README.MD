@@ -39,8 +39,9 @@ docker run -dit \
   -p 3301:3306 \
 --name fdd \
 --restart always \
-grbhq/fdd:latest
+eyesouls/fdd:latest
 ```
+> ARM机型将latest修改为arm64即可。
 
 > 参数说明：
 
@@ -64,7 +65,7 @@ docker run -dit \
  -p 8088:80 \
 --name fdd \
 --restart always \
-grbhq/fdd:latest
+eyesouls/fdd:latest
 ```
 
 > 以上参数和端口请按需修改！！！
@@ -76,10 +77,10 @@ grbhq/fdd:latest
 `docker logs -f fdd`
 
 (1)判断MySQL是否正常启动
-![MySQL启动正常](https://s1.328888.xyz/2022/10/03/PwwOS.png)
+![MySQL启动正常](https://s2.loli.net/2022/10/04/LfvmgoIa6XEihM5.png)
 
 (2)判断fdd后端服务是否启动正常
-![fdd后台正常](https://s1.328888.xyz/2022/10/03/PwBqF.png)
+![fdd后台正常](https://s2.loli.net/2022/10/04/CNyTwWXkgsGZbK1.png)
 
 - 只有以上日志正常后，fdd才算成功运行，此时前端才能正常使用
 
