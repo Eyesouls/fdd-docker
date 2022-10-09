@@ -9,9 +9,9 @@
 
 ### 说明：
 
-> docker版fdd，原仓库地址：[QL-Emotion-jar](https://github.com/fengxiaoruia/QL-Emotion-jar.git) 在此特别鸣谢[grbnb](https://github.com/grbnb)提供方法
+> docker版fdd，原仓库地址：[QL-Emotion-jar](https://github.com/fengxiaoruia/QL-Emotion-jar.git) 另外在此特别鸣谢[grbnb](https://github.com/grbnb)提供方法
 
-> docker基础镜像使用的是alpine3.15+nginx_1.18+openjdk8环境
+> docker基础镜像使用的是alpine3.15+nginx_1.18+openjdk8环境：
 
 > 前端文件存储路径为`/usr/share/nginx/html/`
 
