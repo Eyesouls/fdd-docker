@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  freemarker:
+    cache: false
+    checkTemplateLocation: true
+    contentType: text/html
+    suffix: .html
+    templateEncoding: UTF-8
+    templateLoaderPath: classpath:templates
+  datasource:
+    password: ${MYSQL_ROOT_PASSWORD:123456}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/emotion?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone
+      = GMT
+    username: root
+mybatis-plus:
+  mapper-locations: classpath:mybatis/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
