@@ -2,9 +2,9 @@
     <a href="https://github.com/eyesouls/fdd-docker"><img src="https://img.shields.io/pypi/l/daily?style=plastic" alt="license"></a>
     <a href="https://github.com/eyesouls/fdd-docker"><img src="https://img.shields.io/github/stars/eyesouls/fdd-docker.svg?logo=github&style=plastic" alt="GitHub stars"></a>
     <a href="https://github.com/eyesouls/fdd-docker"><img src="https://img.shields.io/github/forks/eyesouls/fdd-docker.svg?logo=github&style=plastic" alt="GitHub forks"></a>
-    <a href="https://hub.docker.com/r/grbhq/fdd"><img src="https://img.shields.io/docker/pulls/grbhq/fdd?logo=docker&style=plastic" alt="Docker Pulls"></a>
-    <a href="https://hub.docker.com/r/grbhq/fdd/"><img src="https://img.shields.io/docker/image-size/grbhq/fdd?logo=docker&style=plastic" alt="Docker Size"></a>
-    <a href="https://hub.docker.com/r/grbhq/fdd/"><img src="https://img.shields.io/docker/stars/grbhq/fdd?logo=docker&style=plastic" alt="Docker Stars"></a>
+    <a href="https://hub.docker.com/r/eyesouls/fdd"><img src="https://img.shields.io/docker/pulls/eyesouls/fdd?logo=docker&style=plastic" alt="Docker Pulls"></a>
+    <a href="https://hub.docker.com/r/eyesouls/fdd/"><img src="https://img.shields.io/docker/image-size/eyesouls/fdd?logo=docker&style=plastic" alt="Docker Size"></a>
+    <a href="https://hub.docker.com/r/eyesouls/fdd/"><img src="https://img.shields.io/docker/stars/eyesouls/fdd?logo=docker&style=plastic" alt="Docker Stars"></a>
 </p>
 
 ### 说明：
