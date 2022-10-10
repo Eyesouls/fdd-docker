@@ -20,6 +20,10 @@ if [ "$ENABLE_MYSQL" = "false" ]; then
    if [ "$(command -v mysqld)" != "" ]; then
       apk del mysql
    fi
+   if [ ! -s ${FDD_DIR}/config/application.yml ]; then
+      echo "未检测到application.yml配置文件，进入手动配置！"
+      ${FDD_DIR}/config.sh
+   fi
    java -jar ${FDD_DIR}/QL-Emotion.jar
 else
    echo "即将启用内置MySQL数据库"

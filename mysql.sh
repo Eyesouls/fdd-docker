@@ -8,9 +8,13 @@ if [ -n "$pid" ]; then
       kill -9 $pid
 fi
 
-  if [ ! -d "/run/mysqld" ]; then
+if [ -d /etc/my.cnf.d ]; then
+  sed -i "s|.*skip-networking.*|#skip-networking|g" /etc/my.cnf.d/mariadb-server.cnf
+fi
+
+if [ ! -d "/run/mysqld" ]; then
     mkdir -p /run/mysqld
-  fi
+fi
 
 if [ -d ${FDD_DIR}/mysql/mysql ]; then
   echo "[i] MySQL directory already present, skipping creation"
@@ -19,14 +23,10 @@ else
 
   mysql_install_db --user=root > /dev/null
   
-  if [ -d /etc/my.cnf.d ]; then
-  sed -i "s|.*skip-networking.*|#skip-networking|g" /etc/my.cnf.d/mariadb-server.cnf
-  fi
-  
   if [ "$MYSQL_ROOT_PASSWORD" = "" ]; then
     MYSQL_ROOT_PASSWORD=123456
   fi
-echo "[i] MySQL root Password: $MYSQL_ROOT_PASSWORD"
+  echo "[i] MySQL root Password: $MYSQL_ROOT_PASSWORD"
 
   MYSQL_DATABASE=${MYSQL_DATABASE:-""}
   MYSQL_USER=${MYSQL_USER:-""}
@@ -51,14 +51,14 @@ EOF
 
     if [ "$MYSQL_USER" != "" ]; then
       echo "[i] Creating user: $MYSQL_USER with password $MYSQL_PASSWORD"
-      echo -n "GRANT ALL ON \`$MYSQL_DATABASE\`.* to '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PASSWORD';
+      echo -e "GRANT ALL ON \`$MYSQL_DATABASE\`.* to '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PASSWORD';
       GRANT ALL ON \`$MYSQL_DATABASE\`.* to '$MYSQL_USER'@'localhost' IDENTIFIED BY '$MYSQL_PASSWORD';" >> $tfile
     fi
   fi
 
   if [ "$SERCET_KEY" != "" ]; then
       echo "[i] Creating table: sercetkey"
-      echo -n "USE $MYSQL_DATABASE;
+      echo -e "USE $MYSQL_DATABASE;
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS \`sercetkey\`;
 CREATE TABLE \`sercetkey\` (
