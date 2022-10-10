@@ -17,7 +17,7 @@
 
 > 当前分支[三合一版]已增加内置资产查询功能！
 
-> 资产查询功能内部默认端口3100，如有需求请自行添加外部端口映射！
+> 资产查询功能内部默认端口8089，如有需求请自行添加外部端口映射！
 
 
 ## 食用方法：
@@ -36,6 +36,7 @@ docker run -dit \
   -e SERCET_KEY=abcd \
   -p 8088:80 \
   -p 3301:3306 \
+  -p 8089:3100 \
 --name fdd \
 --restart always \
 eyesouls/fdd:latest
@@ -52,6 +53,7 @@ eyesouls/fdd:latest
 | ENABLE_CHANGE       | 是否启用内置资产查询功能，只有为true时启用                |
 | SERCET_KEY          | 系统密钥(自定义禁止特殊符号)，长度必须≥4位，默认值为abcd（可自定义） |
 | 8088                | fdd前端网页端口（可自定义）                        |
+| 8089                | 内置资产查询外部连接端口（可自定义）                 |
 | 3301                | 内置MySQL数据库外部连接端口（可自定义）                 |
 
 #### ②不启用内置MySQL数据库但启用资产查询(需自备MySQL或使用云端MySQL)
@@ -62,6 +64,7 @@ docker run -dit \
  -e ENABLE_CHANGE=true \
  -e ENABLE_MYSQL=false \
  -p 8088:80 \
+ -p 8089:3100 \
 --name fdd \
 --restart always \
 eyesouls/fdd:latest
