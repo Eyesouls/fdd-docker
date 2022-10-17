@@ -19,6 +19,17 @@
 
 > 资产查询功能内部默认端口8089，如有需求请自行添加外部端口映射！
 
+>FDD（QL-Emotion）Linux搭建Docker版本图文教程:
+https://www.luomubiji.host/?p=898
+
+>FDD（QL-Emotion）群晖搭建Docker版本图文教程
+https://www.luomubiji.host/?p=911
+
+>FDD（QL-Emotion）提取 XDD / 阿东 / 傻妞 与QQ绑定关系并导入FDD
+https://www.luomubiji.host/?p=922
+
+>FDD官网教程文档同步更新：
+https://ql-emotion.fun/index.php/docs/%e5%b8%ae%e5%8a%a9%e4%b8%ad%e5%bf%83/%e7%9b%b8%e5%85%b3%e6%95%99%e7%a8%8b/
 
 ## 食用方法：
 
