@@ -117,7 +117,6 @@ eyesouls/fdd:latest
 ## 遇到如下问题
 
 - 1、出现如下报错时，说明MySQL数据库启动过程中出现错误，请执行以下命令
-  ![fdd启动失败](https://s1.328888.xyz/2022/10/03/PCnOF.png)
 
 ①停止容器再删除fdd文件夹并重启容器
 
@@ -134,7 +133,6 @@ eyesouls/fdd:latest
 `docker restart fdd`
 
 - 2、前端出现如下问题，请根据以下情况排查！
-  ![fdd前端报错](https://s1.328888.xyz/2022/10/03/PCKHP.png)
 
 （1）查看fdd后台服务是否正常
   根据报错的日志排除问题即可
