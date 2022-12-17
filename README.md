@@ -142,7 +142,7 @@ eyesouls/fdd:latest
 
 修改完成后请使用`docker restart fdd`重启容器！
 
-【内置MySQL数据库默认外部端口为3301，用户名：root    密码：123456】
+【内置MySQL数据库默认外部端口为3301，用户名：root   密码：123456】
 
 - 3、一键删除容器内的`device.json`文件和`cache`文件夹，解决机器人登陆可能出现的报错问题。
 
