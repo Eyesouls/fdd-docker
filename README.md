@@ -50,9 +50,9 @@ docker run -dit \
   -p 8089:3100 \
 --name fdd \
 --restart always \
-eyesouls/fdd:3.4.6
+eyesouls/fdd:3.4.7
 ```
-> ARM机型将3.4.6修改为3.4.6arm64即可。
+> ARM机型将3.4.7修改为3.4.7arm64即可。
 
 > 参数说明：
 
