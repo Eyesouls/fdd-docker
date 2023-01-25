@@ -7,7 +7,7 @@
     <a href="https://hub.docker.com/r/eyesouls/fdd/"><img src="https://img.shields.io/docker/stars/eyesouls/fdd?logo=docker&style=plastic" alt="Docker Stars"></a>
 </p>
 
-### 说明： 
+### 说明：
 
 > docker版fdd，原仓库地址：[QL-Emotion-jar](https://github.com/fengxiaoruia/QL-Emotion-jar.git) 另外在此特别鸣谢[grbnb](https://github.com/grbnb)提供方法
 
