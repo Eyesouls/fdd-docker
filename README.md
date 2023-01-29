@@ -39,8 +39,7 @@ https://ql-emotion.fun/index.php/docs/%e5%b8%ae%e5%8a%a9%e4%b8%ad%e5%bf%83/%e7%9
 
 ```
 docker run -dit \
-  -v $PWD/fdd/config:/fdd/config \
-  -v $PWD/fdd/mysql:/fdd/mysql \
+  -v $PWD/fdd:/fdd \
   -e MYSQL_ROOT_PASSWORD=123456 \
   -e MYSQL_DATABASE=emotion \
   -e ENABLE_CHANGE=true \
